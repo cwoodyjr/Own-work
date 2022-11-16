@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.spinner {
+  height: 100px;
+  width: 100px;
+  border: 16px solid rgba(128, 128, 128, 0.445);
+  border-top: 16px solid blueviolet;
+  border-radius: 50%;
+  animation: spin 2.5s steps(6) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 5px;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-top: 5px;
+  }
+}
